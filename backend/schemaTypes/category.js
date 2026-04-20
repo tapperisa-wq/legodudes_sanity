@@ -11,6 +11,17 @@ const category = {
             
         },
         {
+            title: 'Slug',
+            name: 'slug',
+            type: 'slug',
+            options: {
+                source: 'categoryname',
+                slugify: input => input
+                                    .toLowerCase()
+                                    .replace(/\s+/g, '-')
+                                    .slice(0, 100)}
+        },
+        {
             name: "categoryimage",
             title: "Kategoribilde",
             type: "image"
