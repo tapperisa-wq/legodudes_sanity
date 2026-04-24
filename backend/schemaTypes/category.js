@@ -15,7 +15,7 @@ const category = {
             name: 'slug',
             type: 'slug',
             options: {
-                source: 'categoryname',
+                source: 'categorynamet',
                 slugify: input => input
                                     .toLowerCase()
                                     .replace(/\s+/g, '-')
